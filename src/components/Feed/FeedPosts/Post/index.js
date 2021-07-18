@@ -50,6 +50,9 @@ const Index = ({
             {saved ? <RiSaveFill /> : <RiSaveLine />}
           </button>
         </div>
+        <p className="card-text mt-1">
+          <strong className="">{nrOfLikes} Likes</strong>
+        </p>
         <p className="card-text">
           <strong style={{ marginRight: '.4rem' }}>{user}</strong>
           {caption}

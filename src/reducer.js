@@ -3,9 +3,14 @@ const reducer = (state, action) => {
     case 'TOGGLE_LIKE_ON_POST':
       const updatedFeedPosts = state.feedPosts.map((feedPost) => {
         if (feedPost.id === action.payload) {
+          const increaseLikeNr = !feedPost.liked;
+          const changedLikeNr = increaseLikeNr
+            ? feedPost.nrOfLikes + 1
+            : feedPost.nrOfLikes - 1;
           return {
             ...feedPost,
             liked: !feedPost.liked,
+            nrOfLikes: changedLikeNr,
           };
         }
         return feedPost;
