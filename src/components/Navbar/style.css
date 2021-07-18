@@ -1,0 +1,10 @@
+li.nav-item {
+  font-size: 1.75rem;
+}
+.navbar-brand {
+  font-size: 2rem;
+}
+
+nav {
+  border-bottom: 0.1rem solid #ccc;
+}
