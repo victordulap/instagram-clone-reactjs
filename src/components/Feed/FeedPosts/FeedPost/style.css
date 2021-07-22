@@ -16,7 +16,8 @@
   padding: 0;
   margin: 0;
   margin-right: 0.75rem;
-  padding: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
 .card-interaction.ms-auto {

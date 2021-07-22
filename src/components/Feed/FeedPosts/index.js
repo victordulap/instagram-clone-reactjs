@@ -1,6 +1,6 @@
 import React from 'react';
 import { useGlobalContext } from '../../../context';
-import Post from './Post';
+import Post from './FeedPost';
 const Index = () => {
   const { feedPosts } = useGlobalContext();
   return (

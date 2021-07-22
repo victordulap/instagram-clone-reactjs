@@ -4,8 +4,7 @@ export const feedPosts = [
     user: 'testuser',
     userImg:
       'https://cdn.iconscout.com/icon/free/png-256/account-avatar-profile-human-man-user-30448.png',
-    postImg:
-      'https://cdn.iconscout.com/icon/free/png-256/account-avatar-profile-human-man-user-30448.png',
+    postImg: 'https://img.toolstud.io/240x240/3b5998/fff&text=+1000x1000+',
     caption:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, quam.',
     nrOfLikes: 100,

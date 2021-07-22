@@ -27,6 +27,11 @@ const reducer = (state, action) => {
         return feedPost;
       });
       return { ...state, feedPosts: updatedFeedPosts2 };
+    case 'GET_POST_BY_ID':
+      const postById = state.feedPosts.find(
+        (post) => post.id === parseInt(action.payload)
+      );
+      return { ...state, postById };
 
     default:
       throw new Error('No matching action found');

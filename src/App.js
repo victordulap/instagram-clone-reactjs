@@ -6,6 +6,7 @@ import './assets/bootstrap/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import { useGlobalContext } from './context';
 import Error from './pages/Error';
+import Post from './components/Post/index';
 function App() {
   const { links } = useGlobalContext();
   return (
@@ -28,6 +29,9 @@ function App() {
               </Route>
             );
           })}
+          <Route path="/post/:id">
+            <Post />
+          </Route>
           <Route path="*">
             <Error />
           </Route>

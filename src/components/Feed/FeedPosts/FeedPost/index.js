@@ -5,6 +5,7 @@ import { AiOutlineHeart, AiFillHeart } from 'react-icons/ai';
 import { RiMessage2Line, RiSaveLine, RiSaveFill } from 'react-icons/ri';
 import { BiPaperPlane } from 'react-icons/bi';
 import { useGlobalContext } from '../../../../context';
+import { Link } from 'react-router-dom';
 
 const Index = ({
   id,
@@ -25,6 +26,7 @@ const Index = ({
           src={userImg}
           className="user-pfp"
           style={{ marginRight: '.4rem' }}
+          alt="couldn't load"
         />
         <span>{user}</span>
       </div>
@@ -58,9 +60,9 @@ const Index = ({
           {caption}
         </p>
         {comments && (
-          <a className="card-comments-nr">
+          <Link to={`/post/${id}`} className="card-comments-nr">
             <strong>Comments ({comments.length})</strong>
-          </a>
+          </Link>
         )}
       </div>
     </div>

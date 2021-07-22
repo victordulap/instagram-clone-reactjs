@@ -20,12 +20,17 @@ const AppProvider = ({ children }) => {
     dispatch({ type: 'TOGGLE_SAVE_ON_POST', payload: id });
   };
 
+  const getPostById = (id) => {
+    dispatch({ type: 'GET_POST_BY_ID', payload: id });
+  };
+
   return (
     <AppContext.Provider
       value={{
         ...state,
         toggleLikeOnPost,
         toggleSaveOnPost,
+        getPostById,
       }}
     >
       {children}
